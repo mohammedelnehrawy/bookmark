@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body> 
+    <section class="py-5">
+      <h1 class="position-relative m-auto mb-5">Bookmarker</h1>
+
+      <div
+        class="container d-flex justify-content-center flex-column align-content-center"
+      >
+        <!-- ---------------------- -->
+        <div class="bookmark d-flex align-items-center flex-column">
+          <h2 class="mb-5 text-center fw-bolder w-100">
+            <i class="fa-solid fa-bookmark"></i>
+            " Bookmark your favorite sites "
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <!-- ------------------- -->
+          <div class="mb-4 w-100">
+            <label for="sitename" class="mb-2 fw-bolder">
+              <i class="fa-solid fa-book-bookmark"></i>
+              Site Name
+            </label>
+            <input
+              type="text"
+              placeholder="Bookmark Name"
+              class="w-100 p-2"
+              id="sitename"
+            />
+          </div>
+          <!-- ------------------- -->
+          <div class="url w-100">
+            <label for="urlname" class="mb-2 fw-bolder">
+              <i class="fa-solid fa-link"></i> Site URL
+            </label>
+            <input
+              type="text"
+              placeholder="Website URL"
+              class="w-100 p-2"
+              id="urlname"
+            />
+          </div>
+          <!-- ----------------- -->
+          <div class="bookmark-btn w-100 text-center">
+            <button id="mybtn" class="btn btn-danger px-5 mt-3 mb-4">
+              Submit
+            </button>
+          </div>
+        </div>
+        <table class="bg-white table table-striped text-center mt-4">
+          <thead >
+            <tr>
+              <th class="text-capitalize">Index</th>
+              <th class="text-capitalize">Website Name</th>
+              <th class="text-capitalize">Visit</th>
+              <th class="text-capitalize">Delete</th>
+            </tr>
+          </thead>
+          <!-- -------------------------- -->
+          <tbody id="tablebody">
+              <!-- <tr>
+                <td>1</td>
+                <td>facebook</td>
+                <td>
+                  <a href="www.facebook.com">
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-eye pe-2"></i>Visit
+                    </button> 
+                  </a>
+                </td>
+                <td>
+                  <button class="btn btn-visit">
+                    <i class="fa-solid fa-trash-can"></i> Delete
+                  </button>
+                </td>
+              </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
